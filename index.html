@@ -6,31 +6,36 @@
     // the category, name, key, url, search path and color for your commands
     // if none of the specified keys are matched, the '*' key is used
     commands: [
-      [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', '#111'],
-      ['Work', 'GitHub', 'g', 'https://github.com/Nikohla44', '/search?q={}', '#333'],
-      ['Work', 'MockFlow', 'a', 'https://mockflow.com/app/#Wireframe', null, '#ff6d00'],
-      ['Work', 'WikiCode', 'I', 'https://cmbnf.bitbucket.io/#Index', '/search/{}', '#4285f4'],
-      ['Work', 'Trello', 'k', 'https://trello.com/', '/#search/text={}', '#fb0'],
-      ['Look', 'Codrops', 'C', 'https://tympanus.net/codrops', '?search-type=posts&s={}', '#0099cc'],
-      ['Look', 'Hunt', 'H', 'https://www.producthunt.com', '/search?q={}', '#da552f'],
-      ['Look', 'Photos', 'P', 'https://photos.google.com', '/search/{}', '#34a853'],
-      ['Look', 'Unsplash', 'u', 'https://unsplash.com/new', '/search/{}', '#000'],
-      ['Lurk', 'Facebook', 'f', 'https://www.facebook.com', '/search/top/?q={}', '#3b5998'],
-      ['Lurk', 'Instagram', 'i', 'https://www.instagram.com', null, '#833ab4'],
-      ['Lurk', 'Reddit', 'r', 'https://www.reddit.com', '/search?q={}', '#5f99cf'],
-      ['Lurk', 'Twitter', 't', 'https://twitter.com', '/search?q={}', '#1da1f2'],
-      ['Listen', 'Hypem', 'h', 'https://hypem.com/popular', '/search/{}', '#83c441'],
-      ['Listen', 'Line Radio', 'l', 'https://linerad.io', '/#{}', '#39CCCC'],
-      ['Listen', 'Pandora', 'p', 'https://www.pandora.com', '/artist/{}', '#005483'],
-      ['Listen', 'SoundCloud', 's', 'https://soundcloud.com/discover', '/search?q={}', '#ff8800'],
-      ['Watch', 'Academy', 'A', 'https://www.khanacademy.org/', '/search?page_search_query={}', '#9cb443'],
-      ['Watch', 'Netflix', 'n', 'https://www.netflix.com/browse', '/search?q={}', '#e50914'],
-      ['Watch', 'Twitch', 'T', 'https://www.twitch.tv/directory/following', null, '#6441a5'],
-      ['Watch', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}', '#cd201f'],
-      ['Download', '7digital', '7', 'https://us.7digital.com', '/search?q={}', '#07606e'],
-      ['Download', 'RARBG', 'R', 'https://rarbg.to', '/torrents.php?search={}', '#00d1b2'],
-      ['Download', 'Pirate Bay', 'b', 'https://thepiratebay.org', '/search/{}', '#4c4132'],
-      ['Download', 'YTS', 'Y', 'https://yts.gs/browse-movies/all/1080p/all/7/latest', '/browse-movies/{}', '#2f2f2f'],
+      [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}'],
+      ['Home', 'Wikipedia', 'w', 'https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal', '/search?q={}'],
+      ['Home', 'Allociné', 'a', 'http://www.allocine.fr/', '/search?q={}'],
+      ['Home', 'Outlook', 'o', 'https://outlook.live.com/mail/inbox/id/AQQkADAwATM0MDAAMS04OTg3LTA4YTctMDACLTAwCgAQAEJ%2BA8W9w0hGiIVNcSVY120%3D', '/search?q={}'],
+      ['Home', 'Gmail', 'g', 'https://mail.google.com/mail/u/0/#inbox', '/search?q={}'],
+      ['Work', 'GitHub', 'gh', 'https://github.com/Nikohla44', '/search/{}'],
+      ['Work', 'MockFlow', 'mf', 'https://mockflow.com/app/#Wireframe', null],
+      ['Work', 'WikiCode', 'wc', 'https://cmbnf.bitbucket.io/#Index', '/search/{}'],
+      ['Work', 'Trello', 't', 'https://trello.com/', '/#search/text={}'],
+      ['Web Tools', 'Google Fonts', 'gf', 'https://www.google.com/fonts', '?search-type=posts&s={}'],
+      ['Web Tools', 'Color Adobe', 'ca', 'https://color.adobe.com/fr/create/color-wheel/', '/search/top/?q={}'],
+      ['Web Tools', 'Font Awesome', 'fa', 'https://fortawesome.github.io/Font-Awesome/', null],
+      ['Web Tools', 'Typicons', 'ti', 'http://s-ings.com/typicons/', '/search?q={}'],
+      ['Web Tools', 'Tiny PNG', 'tp', 'https://tinypng.com/', '/search?q={}'],
+      ['Code Validator', 'W3 HTML5 Validator', 'vh', 'https://validator.w3.org/', '/artist/{}'],
+      ['Code Validator', 'W3 CSS3 alidator', 'vc', 'https://jigsaw.w3.org/css-validator/', '/search?q={}'],
+      ['Design', 'Font Squirrel', 'fs', 'http://fontsquirrel.com/', '/search?q={}'],
+      ['Design', 'Theme Forest', 'tf', 'http://themeforest.net/', '/search/{}'],
+      ['Design', 'Dribbble', 'd', 'https://dribbble.com/', '/#{}'],
+      ['Design', 'Photos', 'p', 'https://photos.google.com', '/search/{}'],
+      ['Design', 'Unsplash', 'u', 'https://unsplash.com/new', '/search/{}'],
+      ['Digital Watch', 'Developpez.com', 'd', 'https://www.developpez.com/', '/search?q={}'],
+      ['Digital Watch', 'Hongkiat', 'h', 'https://www.hongkiat.com/blog/', '/search?q={}'],
+      ['Watch', 'Netflix', 'n', 'https://www.netflix.com/browse', '/search?q={}'],
+      ['Watch', 'Amazon Prime', 'ap', 'https://www.primevideo.com/storefront/home/ref=atv_nb_logo', '/search?page_search_query={}'],
+      ['Watch', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}'],
+      ['Download', '7digital', '7', 'https://us.7digital.com', '/search?q={}'],
+      ['Download', 'RARBG', 'R', 'https://rarbg.to', '/torrents.php?search={}'],
+      ['Download', 'Pirate Bay', 'b', 'https://thepiratebay.org', '/search/{}'],
+      ['Download', 'YTS', 'Y', 'https://yts.gs/browse-movies/all/1080p/all/7/latest', '/browse-movies/{}'],
     ],
 
     // give suggestions as you type
@@ -116,6 +121,7 @@
     background-image: url(img/matt-lamers-275320-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
     font-family: Lato, sans-serif;
     color: var(--color15);
   }
@@ -233,6 +239,7 @@
 
   .category {
     margin-bottom: 2rem;
+    width: 70vw;
   }
 
   .category:last-of-type {
@@ -348,7 +355,7 @@
     }
 
     .categories {
-      grid-template-columns: repeat(2, 300px) 185px;
+      grid-template-columns: repeat(3, 300px) 185px;
     }
   }
 
